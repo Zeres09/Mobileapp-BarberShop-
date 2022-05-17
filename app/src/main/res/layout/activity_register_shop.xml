@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterShopActivity">
+
+    <Button
+        android:id="@+id/RegisterS"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btandbg"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPasswordS" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/btandbg"
+        android:onClick="loginpage"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPasswordS" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/UsernameS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/shopnameS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Your ShopName"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameS" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/NumberS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Your Number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailS" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/AddressrS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Your Address"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumberS" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/PasswordS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CPasswordS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Your Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordS" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/EmailS"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopnameS" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Enter OpenTime Shop"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:background="#807B1616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressrS" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Enter CloseTime Shop"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:background="#807B1616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
